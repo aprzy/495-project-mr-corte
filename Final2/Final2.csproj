@@ -1,0 +1,412 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{95F9E4E1-4737-407A-97AC-CEE78ADD22A9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Final2</RootNamespace>
+    <AssemblyName>Final2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44354</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BarSign.aspx" />
+    <Content Include="CusSign.aspx" />
+    <Content Include="BarLog.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="Template\205 Barber  DOC\css\font-awesome.min.css" />
+    <Content Include="Template\205 Barber  DOC\css\main.css" />
+    <Content Include="Template\205 Barber  DOC\css\normalize.min.css" />
+    <Content Include="Template\205 Barber  DOC\fonts\fontawesome-webfont.svg" />
+    <Content Include="Template\205 Barber  DOC\img\logo.png" />
+    <Content Include="Template\205 Barber  DOC\index.html" />
+    <Content Include="Template\205 Barber  DOC\js\custom.js" />
+    <Content Include="Template\205 Barber  DOC\js\jquery-1.11.0.min.js" />
+    <Content Include="Template\205 Barber  DOC\js\jquery.nav.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shAutoloader.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushAppleScript.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushAS3.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushBash.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushColdFusion.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushCpp.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushCSharp.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushCss.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushDelphi.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushDiff.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushErlang.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushGroovy.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushJava.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushJavaFX.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushJScript.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushPerl.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushPhp.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushPlain.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushPowerShell.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushPython.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushRuby.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushSass.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushScala.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushSql.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushVb.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shBrushXml.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\scripts\shLegacy.js" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCore.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCoreDefault.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCoreDjango.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCoreEclipse.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCoreEmacs.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCoreFadeToGrey.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCoreMDUltra.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCoreMidnight.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shCoreRDark.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shThemeDefault.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shThemeDjango.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shThemeEclipse.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shThemeEmacs.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shThemeFadeToGrey.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shThemeMDUltra.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shThemeMidnight.css" />
+    <Content Include="Template\205 Barber  DOC\syntax-highlighter\styles\shThemeRDark.css" />
+    <Content Include="Template\contact.html" />
+    <Content Include="Template\contact_process.php" />
+    <Content Include="Template\css\animate.css" />
+    <Content Include="Template\css\bootstrap.min.css" />
+    <Content Include="Template\css\flaticon.css" />
+    <Content Include="Template\css\font-awesome.min.css" />
+    <Content Include="Template\css\gijgo.css" />
+    <Content Include="Template\css\magnific-popup.css" />
+    <Content Include="Template\css\nice-select.css" />
+    <Content Include="Template\css\owl.carousel.min.css" />
+    <Content Include="Template\css\reset.css" />
+    <Content Include="Template\css\slicknav.css" />
+    <Content Include="Template\css\style.css" />
+    <Content Include="Template\css\StyleSheet1.css" />
+    <Content Include="Template\css\theme-default.css" />
+    <Content Include="Template\css\themify-icons.css" />
+    <Content Include="Template\fonts\fa-brands-400.svg" />
+    <Content Include="Template\fonts\fa-regular-400.svg" />
+    <Content Include="Template\fonts\fa-solid-900.svg" />
+    <Content Include="Template\fonts\flaticon.css" />
+    <Content Include="Template\fonts\Flaticon.svg" />
+    <Content Include="Template\fonts\fontawesome-webfont.svg" />
+    <Content Include="Template\fonts\gijgo-material.svg" />
+    <Content Include="Template\fonts\themify.svg" />
+    <Content Include="Template\img\about\about_lft.png" />
+    <Content Include="Template\img\banner\banner.png" />
+    <Content Include="Template\img\banner\banner_service.png" />
+    <Content Include="Template\img\banner\barber_text.png" />
+    <Content Include="Template\img\banner\bradcam.png" />
+    <Content Include="Template\img\banner\img.png" />
+    <Content Include="Template\img\blog\author.png" />
+    <Content Include="Template\img\blog\blog_1.png" />
+    <Content Include="Template\img\blog\blog_2.png" />
+    <Content Include="Template\img\blog\blog_3.png" />
+    <Content Include="Template\img\blog\blog_4.png" />
+    <Content Include="Template\img\blog\learn_about_bg.png" />
+    <Content Include="Template\img\blog\single_blog_1.png" />
+    <Content Include="Template\img\blog\single_blog_2.png" />
+    <Content Include="Template\img\blog\single_blog_3.png" />
+    <Content Include="Template\img\blog\single_blog_4.png" />
+    <Content Include="Template\img\blog\single_blog_5.png" />
+    <Content Include="Template\img\blog\slide_thumb_1.png" />
+    <Content Include="Template\img\comment\comment_1.png" />
+    <Content Include="Template\img\comment\comment_2.png" />
+    <Content Include="Template\img\comment\comment_3.png" />
+    <Content Include="Template\img\elements\a.jpg" />
+    <Content Include="Template\img\elements\a2.jpg" />
+    <Content Include="Template\img\elements\d.jpg" />
+    <Content Include="Template\img\elements\disabled-check.png" />
+    <Content Include="Template\img\elements\disabled-radio.png" />
+    <Content Include="Template\img\elements\f1.jpg" />
+    <Content Include="Template\img\elements\f2.jpg" />
+    <Content Include="Template\img\elements\f3.jpg" />
+    <Content Include="Template\img\elements\f4.jpg" />
+    <Content Include="Template\img\elements\f5.jpg" />
+    <Content Include="Template\img\elements\f6.jpg" />
+    <Content Include="Template\img\elements\f7.jpg" />
+    <Content Include="Template\img\elements\f8.jpg" />
+    <Content Include="Template\img\elements\g1.jpg" />
+    <Content Include="Template\img\elements\g2.jpg" />
+    <Content Include="Template\img\elements\g3.jpg" />
+    <Content Include="Template\img\elements\g4.jpg" />
+    <Content Include="Template\img\elements\g5.jpg" />
+    <Content Include="Template\img\elements\g6.jpg" />
+    <Content Include="Template\img\elements\g7.jpg" />
+    <Content Include="Template\img\elements\g8.jpg" />
+    <Content Include="Template\img\elements\primary-check.png" />
+    <Content Include="Template\img\elements\primary-radio.png" />
+    <Content Include="Template\img\elements\success-check.png" />
+    <Content Include="Template\img\elements\success-radio.png" />
+    <Content Include="Template\img\favicon.ico" />
+    <Content Include="Template\img\favicon.png" />
+    <Content Include="Template\img\footer-logo.png" />
+    <Content Include="Template\img\gallery\1.png" />
+    <Content Include="Template\img\gallery\2.png" />
+    <Content Include="Template\img\gallery\3.png" />
+    <Content Include="Template\img\gallery\34452532_1811336118889346_45665853227663360_n.jpg" />
+    <Content Include="Template\img\gallery\35519896_1828341083855516_6544294247904837632_o.jpg" />
+    <Content Include="Template\img\gallery\37880736_1891318227557801_6244619832608686080_o.jpg" />
+    <Content Include="Template\img\gallery\89561318_2943696548986625_4157846603899600896_o.jpg" />
+    <Content Include="Template\img\gallery\89920257_2943845418971738_1400329964661768192_o.jpg" />
+    <Content Include="Template\img\gallery\video.png" />
+    <Content Include="Template\img\logo.png" />
+    <Content Include="Template\img\mr corte logo text.png" />
+    <Content Include="Template\img\offers\1.png" />
+    <Content Include="Template\img\offers\2.png" />
+    <Content Include="Template\img\offers\3.png" />
+    <Content Include="Template\img\post\next.png" />
+    <Content Include="Template\img\post\post_1.png" />
+    <Content Include="Template\img\post\post_10.png" />
+    <Content Include="Template\img\post\post_2.png" />
+    <Content Include="Template\img\post\post_3.png" />
+    <Content Include="Template\img\post\post_4.png" />
+    <Content Include="Template\img\post\post_5.png" />
+    <Content Include="Template\img\post\post_6.png" />
+    <Content Include="Template\img\post\post_7.png" />
+    <Content Include="Template\img\post\post_8.png" />
+    <Content Include="Template\img\post\post_9.png" />
+    <Content Include="Template\img\post\preview.png" />
+    <Content Include="Template\img\service\1.png" />
+    <Content Include="Template\img\service\10.png" />
+    <Content Include="Template\img\service\2.png" />
+    <Content Include="Template\img\service\3.png" />
+    <Content Include="Template\img\service\4.png" />
+    <Content Include="Template\img\service\5.png" />
+    <Content Include="Template\img\service\6.png" />
+    <Content Include="Template\img\service\7.png" />
+    <Content Include="Template\img\service\8.png" />
+    <Content Include="Template\img\service\9.png" />
+    <Content Include="Template\img\team\1.png" />
+    <Content Include="Template\img\team\2.png" />
+    <Content Include="Template\img\team\3.png" />
+    <Content Include="Template\img\team\4.png" />
+    <Content Include="Template\img\team\img.png" />
+    <Content Include="Template\index.html" />
+    <Content Include="Template\js\ajax-form.js" />
+    <Content Include="Template\js\bootstrap.min.js" />
+    <Content Include="Template\js\contact.js" />
+    <Content Include="Template\js\gijgo.min.js" />
+    <Content Include="Template\js\imagesloaded.pkgd.min.js" />
+    <Content Include="Template\js\isotope.pkgd.min.js" />
+    <Content Include="Template\js\jquery.ajaxchimp.min.js" />
+    <Content Include="Template\js\jquery.counterup.min.js" />
+    <Content Include="Template\js\jquery.form.js" />
+    <Content Include="Template\js\jquery.magnific-popup.min.js" />
+    <Content Include="Template\js\jquery.scrollUp.min.js" />
+    <Content Include="Template\js\jquery.slicknav.min.js" />
+    <Content Include="Template\js\jquery.validate.min.js" />
+    <Content Include="Template\js\mail-script.js" />
+    <Content Include="Template\js\main.js" />
+    <Content Include="Template\js\nice-select.min.js" />
+    <Content Include="Template\js\owl.carousel.min.js" />
+    <Content Include="Template\js\plugins.js" />
+    <Content Include="Template\js\popper.min.js" />
+    <Content Include="Template\js\scrollIt.js" />
+    <Content Include="Template\js\vendor\jquery-1.12.4.min.js" />
+    <Content Include="Template\js\vendor\modernizr-3.5.0.min.js" />
+    <Content Include="Template\js\waypoints.min.js" />
+    <Content Include="Template\js\wow.min.js" />
+    <Content Include="Template\main.html" />
+    <Content Include="Template\readme.txt" />
+    <Content Include="Template\service.html" />
+    <Content Include="Web.config" />
+    <Content Include="CusLog.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BarSign.aspx.cs">
+      <DependentUpon>BarSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BarSign.aspx.designer.cs">
+      <DependentUpon>BarSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CusSign.aspx.cs">
+      <DependentUpon>CusSign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CusSign.aspx.designer.cs">
+      <DependentUpon>CusSign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BarLog.aspx.cs">
+      <DependentUpon>BarLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BarLog.aspx.designer.cs">
+      <DependentUpon>BarLog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="CusLog.aspx.cs">
+      <DependentUpon>CusLog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CusLog.aspx.designer.cs">
+      <DependentUpon>CusLog.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Template\205 Barber  DOC\fonts\fontawesome-webfont.eot" />
+    <Content Include="Template\205 Barber  DOC\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Template\205 Barber  DOC\fonts\fontawesome-webfont.woff" />
+    <Content Include="Template\205 Barber  DOC\fonts\FontAwesome.otf" />
+    <Content Include="Template\css\reset.map" />
+    <Content Include="Template\css\style.map" />
+    <Content Include="Template\css\theme-default.map" />
+    <Content Include="Template\fonts\fa-brands-400.eot" />
+    <Content Include="Template\fonts\fa-brands-400.ttf" />
+    <Content Include="Template\fonts\fa-brands-400.woff" />
+    <Content Include="Template\fonts\fa-brands-400.woff2" />
+    <Content Include="Template\fonts\fa-regular-400.eot" />
+    <Content Include="Template\fonts\fa-regular-400.ttf" />
+    <Content Include="Template\fonts\fa-regular-400.woff" />
+    <Content Include="Template\fonts\fa-regular-400.woff2" />
+    <Content Include="Template\fonts\fa-solid-900.eot" />
+    <Content Include="Template\fonts\fa-solid-900.ttf" />
+    <Content Include="Template\fonts\fa-solid-900.woff" />
+    <Content Include="Template\fonts\fa-solid-900.woff2" />
+    <Content Include="Template\fonts\Flaticon.eot" />
+    <Content Include="Template\fonts\Flaticon.ttf" />
+    <Content Include="Template\fonts\Flaticon.woff" />
+    <Content Include="Template\fonts\Flaticon.woff2" />
+    <Content Include="Template\fonts\fontawesome-webfont.eot" />
+    <Content Include="Template\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Template\fonts\fontawesome-webfont.woff" />
+    <Content Include="Template\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Template\fonts\FontAwesome.otf" />
+    <Content Include="Template\fonts\gijgo-material.eot" />
+    <Content Include="Template\fonts\gijgo-material.ttf" />
+    <Content Include="Template\fonts\gijgo-material.woff" />
+    <Content Include="Template\fonts\themify.eot" />
+    <Content Include="Template\fonts\themify.ttf" />
+    <Content Include="Template\fonts\themify.woff" />
+    <Content Include="Template\scss\style.scss" />
+    <Content Include="Template\scss\_about.scss" />
+    <Content Include="Template\scss\_blog.scss" />
+    <Content Include="Template\scss\_blog_part.scss" />
+    <Content Include="Template\scss\_bradcam.scss" />
+    <Content Include="Template\scss\_btn.scss" />
+    <Content Include="Template\scss\_contact.scss" />
+    <Content Include="Template\scss\_cutter_master.scss" />
+    <Content Include="Template\scss\_elements.scss" />
+    <Content Include="Template\scss\_extend.scss" />
+    <Content Include="Template\scss\_footer.scss" />
+    <Content Include="Template\scss\_gallery.scss" />
+    <Content Include="Template\scss\_header.scss" />
+    <Content Include="Template\scss\_mixins.scss" />
+    <Content Include="Template\scss\_reset.scss" />
+    <Content Include="Template\scss\_responsive.scss" />
+    <Content Include="Template\scss\_section_title.scss" />
+    <Content Include="Template\scss\_service.scss" />
+    <Content Include="Template\scss\_slick-nav.scss" />
+    <Content Include="Template\scss\_slider.scss" />
+    <Content Include="Template\scss\_varriable.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59737</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44354/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
