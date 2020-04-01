@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Booking.master.cs" Inherits="Final2.Booking" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Mr Corte Barber Appointment Scheduling</title>
+    <link href="~/Media/layout.css" rel="stylesheet" type="text/css" />
+    <link href="media/custom.css" type="text/css" rel="stylesheet" />
+    <script src="js/daypilot-modal-2.2.js"></script>
+
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+
+
+        </div>
+    </form>
+</body>
+</html>

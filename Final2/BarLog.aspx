@@ -11,11 +11,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="template/img/favicon.png"/>
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="template/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="template/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="template/css/owl.carousel.min.css"/>
     <link rel="stylesheet" href="template/css/magnific-popup.css"/>
     <link rel="stylesheet" href="template/css/font-awesome.min.css"/>
@@ -114,14 +114,17 @@
             <p>Password</p>
             <asp:TextBox ID="tb_BarberPass" runat="server" TextMode="Password"></asp:TextBox>
             <br />
+                            <br />
+                            <asp:Label ID="lb_invalid" runat="server"></asp:Label>
+                            <br />
             <br />
-<%--            <asp:Button ID="btn_BarberLogIn" runat="server" Text="Log In" OnClick="submitEventMethod" />--%>
+                            <%--            <asp:Button ID="btn_BarberLogIn" runat="server" Text="Log In" OnClick="submitEventMethod" />--%>
+                            <asp:Button ID="btn_BarberLogIn" runat="server" OnClick="submitEventMethod" Text="Log In" />
         </div>
                         </td>
 
                         </tr>
-                        <tr>
-                    </table>
+                        </table>
 
 
 

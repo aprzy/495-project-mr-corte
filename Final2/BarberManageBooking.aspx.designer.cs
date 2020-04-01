@@ -11,52 +11,43 @@ namespace Final2
 {
 
 
-    public partial class BarLog
+    public partial class BarberManageBooking
     {
 
         /// <summary>
-        /// form1 control.
+        /// btnSignOut control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.WebControls.Button btnSignOut;
 
         /// <summary>
-        /// tb_BarberUname control.
+        /// Schedule control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_BarberUname;
+        protected global::System.Web.UI.WebControls.Panel Schedule;
 
         /// <summary>
-        /// tb_BarberPass control.
+        /// DayPilotNavigator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_BarberPass;
+        protected global::DayPilot.Web.Ui.DayPilotNavigator DayPilotNavigator1;
 
         /// <summary>
-        /// lb_invalid control.
+        /// DayPilotCalendar1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_invalid;
-
-        /// <summary>
-        /// btn_BarberLogIn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_BarberLogIn;
+        protected global::DayPilot.Web.Ui.DayPilotCalendar DayPilotCalendar1;
     }
 }

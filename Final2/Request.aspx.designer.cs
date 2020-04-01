@@ -11,7 +11,7 @@ namespace Final2
 {
 
 
-    public partial class BarLog
+    public partial class Request
     {
 
         /// <summary>
@@ -24,39 +24,48 @@ namespace Final2
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// tb_BarberUname control.
+        /// TextBoxStart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_BarberUname;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxStart;
 
         /// <summary>
-        /// tb_BarberPass control.
+        /// TextBoxEnd control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_BarberPass;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxEnd;
 
         /// <summary>
-        /// lb_invalid control.
+        /// TextBoxName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_invalid;
+        protected global::System.Web.UI.WebControls.TextBox TextBoxName;
 
         /// <summary>
-        /// btn_BarberLogIn control.
+        /// ButtonOK control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_BarberLogIn;
+        protected global::System.Web.UI.WebControls.Button ButtonOK;
+
+        /// <summary>
+        /// ButtonCancel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonCancel;
     }
 }

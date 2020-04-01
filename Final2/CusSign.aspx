@@ -29,6 +29,11 @@
     <link rel="stylesheet" href="template/css/table.css"/>
 
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style type="text/css">
+        .auto-style1 {
+            height: 42px;
+        }
+    </style>
 </head>
 
 <body>
@@ -109,9 +114,8 @@
                         <asp:TextBox ID="tb_firstname" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:Label ID="lb_firstname" runat="server" Text=""></asp:Label>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="First name required"  ControlToValidate="tb_firstname"></asp:RequiredFieldValidator>
                         <br />
-<%--                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tb_firstname" ErrorMessage="First name is required"></asp:RequiredFieldValidator>--%>
                     </td>
                 </tr>
                 <tr>
@@ -120,9 +124,8 @@
                         <asp:TextBox ID="tb_lastname" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:Label ID="lb_lastname" runat="server" Text=""></asp:Label>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Last name required"  ControlToValidate="tb_lastname"></asp:RequiredFieldValidator>
                         <br />
-<%--                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tb_lastname" ErrorMessage="Last name is required"></asp:RequiredFieldValidator>--%>
                     </td>
                 </tr>
                 <tr>
@@ -131,22 +134,18 @@
                         <asp:TextBox ID="tb_username" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style8">
-                        <asp:Label ID="lb_username" runat="server" Text=""></asp:Label>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Username required"  ControlToValidate="tb_username"></asp:RequiredFieldValidator>
                         <br />
-<%--<asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tb_username" ErrorMessage="Username is required"></asp:RequiredFieldValidator>--%>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style4">Password:</td>
-                    <td class="auto-style14">
+                    <td class="auto-style1">Password:</td>
+                    <td class="auto-style1">
                         <asp:TextBox ID="tb_password" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">
-                        <asp:Label ID="lb_password" runat="server" Text=""></asp:Label>
+                    <td class="auto-style1">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tb_password"  ErrorMessage="The password must be between 8 and 15 characters long, contains at least one number,  at least one uppercase letter and at least one lowercase letter" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$"></asp:RegularExpressionValidator>
                         <br />
-<%--                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="tb_password" ErrorMessage="Password is required"></asp:RequiredFieldValidator>--%>
-                        <br />
-<%--                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tb_password" ErrorMessage="The password must be between 8 and 15 characters long, contains at least one number,  at least one uppercase letter and at least one lowercase letter" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$"></asp:RegularExpressionValidator>--%>
                     </td>
                 </tr>
                 <tr>
@@ -156,8 +155,8 @@
                     </td>
                     <td class="auto-style8">
 <%--                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="tb_confirmpass" ErrorMessage="Password confirmation is required"></asp:RequiredFieldValidator>--%>
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tb_password" ControlToValidate="tb_confirmpass" ErrorMessage="Password confirmation does not match"></asp:CompareValidator>
                         <br />
-<%--                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tb_password" ControlToValidate="tb_confirmpass" ErrorMessage="Password confirmation does not match"></asp:CompareValidator>--%>
                     </td>
                 </tr>
                 <tr>
@@ -166,11 +165,8 @@
                         <asp:TextBox ID="tb_email" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:Label ID="lb_email" runat="server" Text=""></asp:Label>
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_email" ErrorMessage="Please enter a valid email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                         <br />
-<%--                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="tb_email" ErrorMessage="Email is required"></asp:RequiredFieldValidator>--%>
-                        <br />
-<%--                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_email" ErrorMessage="Please enter a valid email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>--%>
                     </td>
                 </tr>
                 <tr>
@@ -179,13 +175,30 @@
                         <asp:TextBox ID="tb_phone" runat="server"></asp:TextBox>
                     </td>
                     <td class="auto-style7">
-                        <asp:Label ID="lb_phone" runat="server" Text=""></asp:Label>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Phone required" ControlToValidate="tb_phone" ></asp:RequiredFieldValidator>
                         <br />
-<%--                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="tb_phone" ErrorMessage="Phone number is required"></asp:RequiredFieldValidator>--%>
                     </td>
                 </tr>
-                </table>
+                <tr>
+                    <td class="auto-style12">
+                        &nbsp;</td>
+                    <td class="auto-style15">
+                        &nbsp;</td>
+                    <td class="auto-style7">
+                        &nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style12">
+                        &nbsp;</td>
+                    <td class="auto-style15">
+                    <asp:Button ID="btn_registration" runat="server" Text="Button" OnClick="registerEventMethod" Height="31px" />
 
+
+                    </td>
+                    <td class="auto-style7">
+                        &nbsp;</td>
+                </tr>
+                </table>
 
 
 </div>

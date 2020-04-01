@@ -33,13 +33,13 @@ namespace Final2
         protected global::System.Web.UI.WebControls.TextBox tb_firstname;
 
         /// <summary>
-        /// lb_firstname control.
+        /// RequiredFieldValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_firstname;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
 
         /// <summary>
         /// tb_lastname control.
@@ -51,13 +51,13 @@ namespace Final2
         protected global::System.Web.UI.WebControls.TextBox tb_lastname;
 
         /// <summary>
-        /// lb_lastname control.
+        /// RequiredFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_lastname;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
 
         /// <summary>
         /// tb_username control.
@@ -69,13 +69,13 @@ namespace Final2
         protected global::System.Web.UI.WebControls.TextBox tb_username;
 
         /// <summary>
-        /// lb_username control.
+        /// RequiredFieldValidator3 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_username;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
 
         /// <summary>
         /// tb_password control.
@@ -87,13 +87,13 @@ namespace Final2
         protected global::System.Web.UI.WebControls.TextBox tb_password;
 
         /// <summary>
-        /// lb_password control.
+        /// RegularExpressionValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_password;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator2;
 
         /// <summary>
         /// tb_confirmpass control.
@@ -105,6 +105,15 @@ namespace Final2
         protected global::System.Web.UI.WebControls.TextBox tb_confirmpass;
 
         /// <summary>
+        /// CompareValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+
+        /// <summary>
         /// tb_email control.
         /// </summary>
         /// <remarks>
@@ -114,13 +123,13 @@ namespace Final2
         protected global::System.Web.UI.WebControls.TextBox tb_email;
 
         /// <summary>
-        /// lb_email control.
+        /// RegularExpressionValidator1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_email;
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
 
         /// <summary>
         /// tb_phone control.
@@ -132,12 +141,21 @@ namespace Final2
         protected global::System.Web.UI.WebControls.TextBox tb_phone;
 
         /// <summary>
-        /// lb_phone control.
+        /// RequiredFieldValidator7 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lb_phone;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator7;
+
+        /// <summary>
+        /// btn_registration control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btn_registration;
     }
 }

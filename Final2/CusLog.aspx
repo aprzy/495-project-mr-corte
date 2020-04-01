@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="template/img/favicon.png"/>
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -111,7 +111,12 @@
             <asp:TextBox ID="tb_username" runat="server"></asp:TextBox>
             
             <p>Password</p>
-            <asp:TextBox ID="tb_password" runat="server" TextMode="Password"></asp:TextBox><br />
+            <asp:TextBox ID="tb_password" runat="server" TextMode="Password"></asp:TextBox>
+                            <br />
+                            <br />
+                            <br />
+                            <asp:Button ID="Button1" runat="server" OnClick="submitEventMethod" Text="Button" />
+                            <br />
 
 <%--            <asp:Button ID="btn_login" runat="server" Text="Log in" OnClick="submitEventMethod"/>--%>
         </div>
