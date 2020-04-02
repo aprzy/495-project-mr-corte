@@ -56,6 +56,7 @@ namespace Final2
             cmd.Parameters.AddWithValue("?slowHashSalt", saltHashReturned);
 
             cmd.ExecuteReader();
+            Response.Redirect("BarLog.aspx", false);
             conn.Close();
         }
     }

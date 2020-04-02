@@ -15,7 +15,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <%--    <link rel="stylesheet" href="template/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="template/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="template/css/owl.carousel.min.css"/>
     <link rel="stylesheet" href="template/css/magnific-popup.css"/>
     <link rel="stylesheet" href="template/css/font-awesome.min.css"/>
@@ -26,9 +26,17 @@
     <link rel="stylesheet" href="template/css/animate.css"/>
     <link rel="stylesheet" href="template/css/slicknav.css"/>
     <link rel="stylesheet" href="template/css/style.css"/>
-    <link rel="stylesheet" href="template/css/table.css"/>--%>
+    <link rel="stylesheet" href="template/css/table.css"/>
 
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <style type="text/css">
+        .auto-style1 {
+            width: 213px;
+        }
+        .auto-style2 {
+            width: 152%;
+        }
+    </style>
 </head>
 
 <body>
@@ -102,111 +110,106 @@
             <div class="col-12">
                 <div class="d-none d-sm-block mb-5 pb-4">
                    <h3 align="center">Sign Up</h3>
-                    <table class="auto-style1" align="center">
+                   <div style="text-align:center;">
+                    <div style="width:50%; margin: 0 auto; text-align:left;">
+                    <table class="auto-style2">
             <tr>
-                <td class="auto-style2">First Name:</td>
+                <td class="auto-style1">First Name:</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="tb_barbFirstName" runat="server"></asp:TextBox>
                 </td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tb_barbFirstName" ErrorMessage="First name is required"></asp:RequiredFieldValidator>
+                <td><asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="tb_barbFirstName" ErrorMessage="First name is required" CssClass="required" ></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style4">Last Name: </td>
+                <td class="auto-style1">Last Name: </td>
                 <td class="auto-style5">
                     <asp:TextBox ID="tb_barbLastName" runat="server"></asp:TextBox>
                 </td>
-                <td class="auto-style6">
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tb_barbLastName" ErrorMessage="Last name is required"></asp:RequiredFieldValidator>
+                <td>    
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="tb_barbLastName" ErrorMessage="Last name is required" CssClass="required" ></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Address:</td>
+                <td class="auto-style1">Address:</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="tb_barbAddress" runat="server"></asp:TextBox>
+                
                 </td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tb_barbAddress" ErrorMessage="Address is required"></asp:RequiredFieldValidator>
-                </td>
-            </tr>
+                            <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="tb_barbAddress" ErrorMessage="Address is required" CssClass="required" ></asp:RequiredFieldValidator>
+                            </td>
+                        </tr>
             <tr>
-                <td class="auto-style2">Postal Code</td>
+                <td class="auto-style1">Postal Code</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="tb_barbPostalCode" runat="server"></asp:TextBox>
                 </td>
-                <td>
                     <%--                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="tb_barbPostalCode" ErrorMessage="Postal Code is required"></asp:RequiredFieldValidator>--%>
-                    <br />
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="tb_barbPostalCode" ErrorMessage="Please enter a valid postal code" ValidationExpression="^([A-Za-z]\d[A-Za-z][-]?\d[A-Za-z]\d)"></asp:RegularExpressionValidator>
+                  <td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="tb_barbPostalCode" ErrorMessage="Please enter a valid postal code" CssClass="required" ValidationExpression="^([A-Za-z]\d[A-Za-z][-]?\d[A-Za-z]\d)"></asp:RegularExpressionValidator>
                 </td>
+
             </tr>
             <tr>
-                <td class="auto-style2">SIN </td>
+                <td class="auto-style1">SIN </td>
                 <td class="auto-style3">
                     <asp:TextBox ID="tb_barbSIN" runat="server"></asp:TextBox>
-                </td>
+               </td>
                 <td>
-                    <%--                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="tb_barbSIN" ErrorMessage="SIN number is required"></asp:RequiredFieldValidator>--%>
-                    <br />
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="tb_barbSIN" ErrorMessage="Please enter a valid SIN " ValidationExpression="^(\d{3}-\d{3}-\d{3})|(\d{9})$"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="tb_barbSIN" ErrorMessage="Please enter a valid SIN " CssClass="required" ValidationExpression="^(\d{3}-\d{3}-\d{3})|(\d{9})$"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Phone Number: </td>
+                <td class="auto-style1">Phone Number: </td>
                 <td class="auto-style3">
                     <asp:TextBox ID="tb_barbPhone" runat="server"></asp:TextBox>
                 </td>
                 <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="tb_barbPhone" ErrorMessage="Phone number is required"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="tb_barbPhone" ErrorMessage="Phone number is required" CssClass="required" ></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Username</td>
+                <td class="auto-style1">Username</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="tb_barbUsername" runat="server"></asp:TextBox>
                 </td>
-                <td>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="tb_barbUsername" ErrorMessage="Username is required"></asp:RequiredFieldValidator>
+                    <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="tb_barbUsername" ErrorMessage="Username is required" CssClass="required" ></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style4">Password: </td>
+                <td class="auto-style1">Password: </td>
                 <td class="auto-style5">
                     <asp:TextBox ID="tb_barbPassword" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
-                <td class="auto-style6">
-                    <%--                    <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="tb_barbPassword" ErrorMessage="Password is required"></asp:RequiredFieldValidator>--%>
-                    <br />
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tb_barbPassword" ErrorMessage="The password must be between 8 and 15 characters long, contains at least one number,  at least one uppercase letter and at least one lowercase letter" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$"></asp:RegularExpressionValidator>
-                </td>
-            </tr>
+                            <td>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tb_barbPassword" ErrorMessage="Password must be between 8-15 characters, with at least one upper case and one lower case letter, and one number" CssClass="required" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$"></asp:RegularExpressionValidator>
+
+                            </td>
+                        </tr>
             <tr>
-                <td class="auto-style2">Confirm Password</td>
+                <td class="auto-style1">Confirm Password</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="tb_barbConfirmPass" runat="server" TextMode="Password"></asp:TextBox>
                 </td>
                 <td>
-                    <%--                    <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="tb_barbConfirmPass" ErrorMessage="Password confirmation is required"></asp:RequiredFieldValidator>--%>
-                    <br />
-                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tb_barbPassword" ErrorMessage="Password confirmation does not match" ControlToValidate="tb_barbConfirmPass"></asp:CompareValidator>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tb_barbPassword" ErrorMessage="Password confirmation does not match" CssClass="required" ControlToValidate="tb_barbConfirmPass"></asp:CompareValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">Email</td>
+                <td class="auto-style1">Email</td>
                 <td class="auto-style3">
                     <asp:TextBox ID="tb_barbEmail" runat="server"></asp:TextBox>
-                </td>
+               </td>
                 <td>
-                    <%--                    <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="tb_barbEmail" ErrorMessage="Email is required"></asp:RequiredFieldValidator>--%>
-                    <br />
-                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_barbEmail" ErrorMessage="Please enter a valid email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_barbEmail" ErrorMessage="Please enter a valid email" CssClass="required" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style2">
+                <td class="auto-style1">
                     <br />
-                    <asp:Button ID="btn_BarberLogIn" runat="server" Text="Submit" OnClick="barberRegisterEventMethod"/>
+                    <asp:Button class="btn-outline-dark" ID="btn_BarberLogIn" runat="server" Text="Sign Up" OnClick="barberRegisterEventMethod"/>
                 </td>
                 <td class="auto-style3">
                     &nbsp;</td>
@@ -215,8 +218,8 @@
             </tr>
         </table>
 
-
-
+</div>
+</div>
 </div>
 </div>
         </section>

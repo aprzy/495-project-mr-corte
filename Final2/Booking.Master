@@ -9,11 +9,63 @@
     <link href="media/custom.css" type="text/css" rel="stylesheet" />
     <script src="js/daypilot-modal-2.2.js"></script>
 
+    <!-- CSS here -->
+    <link rel="stylesheet" href="template/css/bootstrap.min.css">
+    <link rel="stylesheet" href="template/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="template/css/magnific-popup.css">
+    <link rel="stylesheet" href="template/css/font-awesome.min.css">
+    <link rel="stylesheet" href="template/css/themify-icons.css">
+    <link rel="stylesheet" href="template/css/nice-select.css">
+    <link rel="stylesheet" href="template/css/flaticon.css">
+    <link rel="stylesheet" href="template/css/gijgo.css">
+    <link rel="stylesheet" href="template/css/animate.css">
+    <link rel="stylesheet" href="template/css/slicknav.css">
+    <link rel="stylesheet" href="template/css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 
     <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+
 </head>
 <body>
     <form id="form2" runat="server">
+<header>
+<div class="header-area ">
+                <div id="sticky-header" class="main-header-area">
+                    <div class="container-fluid p-0">
+                        <div class="row align-items-center no-gutters">
+                                <div class="col-xl-3 col-lg-3">
+                                    <div class="logo-img">
+                                        <a href="index.html">
+                                            <img src="img/logo.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="main-menu  d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="index.html">home</a></li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-end -->
+    
+        <!-- bradcam_area_start -->
+        <div class="bradcam_area breadcam_bg overlay2">
+                <h3>Book Appointment</h3>
+            </div>
+            <!-- bradcam_area_end -->
         <div>
             <asp:ContentPlaceHolder ID="MainContentPlaceHolder1" runat="server">
 

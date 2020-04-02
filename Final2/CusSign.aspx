@@ -33,6 +33,27 @@
         .auto-style1 {
             height: 42px;
         }
+        .auto-style2 {
+            height: 42px;
+            width: 760px;
+        }
+        .auto-style3 {
+            width: 392px;
+        }
+        .auto-style4 {
+            height: 42px;
+            width: 392px;
+        }
+        .auto-style5 {
+            width: 1750px;
+        }
+        .auto-style6 {
+            height: 42px;
+            width: 1750px;
+        }
+        .auto-style7 {
+            width: 69%;
+        }
     </style>
 </head>
 
@@ -107,99 +128,108 @@
             <div class="col-12">
                 <div class="d-none d-sm-block mb-5 pb-4">
                    <h3 align="center">Sign Up</h3>
-                    <table class="auto-style1" align="center">
+                    <div style="text-align:center;">
+                        <div style="width:50%; margin: 0 auto; text-align:left;">
+                            <table class="auto-style2">
                 <tr>
-                    <td class="auto-style12">First Name:</td>
+                    <td class="auto-style3">First Name:</td>
                     <td class="auto-style15">
                         <asp:TextBox ID="tb_firstname" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style7">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="First name required"  ControlToValidate="tb_firstname"></asp:RequiredFieldValidator>
-                        <br />
+<td class="auto-style5">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="First name required" CssClass="required" ControlToValidate="tb_firstname"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
+
+              
                 <tr>
-                    <td class="auto-style12">Last Name:</td>
+                    <td class="auto-style3">Last Name:</td>
                     <td class="auto-style15">
                         <asp:TextBox ID="tb_lastname" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style7">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Last name required"  ControlToValidate="tb_lastname"></asp:RequiredFieldValidator>
-                        <br />
+                    <td class="auto-style5">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Last name required" CssClass="required" ControlToValidate="tb_lastname"></asp:RequiredFieldValidator>
+                        
                     </td>
-                </tr>
+                    </tr>
+                    
+
                 <tr>
-                    <td class="auto-style4">Username:</td>
+                    <td class="auto-style3">Username:</td>
                     <td class="auto-style14">
                         <asp:TextBox ID="tb_username" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Username required"  ControlToValidate="tb_username"></asp:RequiredFieldValidator>
-                        <br />
+                    <td class="auto-style5">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Username required" CssClass="required" ControlToValidate="tb_username"></asp:RequiredFieldValidator>
+                        
                     </td>
                 </tr>
+            
+
                 <tr>
-                    <td class="auto-style1">Password:</td>
+                    <td class="auto-style4">Password:</td>
                     <td class="auto-style1">
                         <asp:TextBox ID="tb_password" runat="server" TextMode="Password"></asp:TextBox>
+                    
                     </td>
-                    <td class="auto-style1">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tb_password"  ErrorMessage="The password must be between 8 and 15 characters long, contains at least one number,  at least one uppercase letter and at least one lowercase letter" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$"></asp:RegularExpressionValidator>
-                        <br />
+                    <td class="auto-style6">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="tb_password"  ErrorMessage="The password must be between 8 and 15 characters long, contains at least one number,  at least one uppercase letter and at least one lowercase letter" CssClass="required" ValidationExpression="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,15}$"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
+                        
                 <tr>
                     <td class="auto-style4">Confirm password:</td>
                     <td class="auto-style14">
                         <asp:TextBox ID="tb_confirmpass" runat="server" TextMode="Password"></asp:TextBox>
                     </td>
-                    <td class="auto-style8">
+                    <td class="auto-style5">
 <%--                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="tb_confirmpass" ErrorMessage="Password confirmation is required"></asp:RequiredFieldValidator>--%>
-                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tb_password" ControlToValidate="tb_confirmpass" ErrorMessage="Password confirmation does not match"></asp:CompareValidator>
-                        <br />
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="tb_password" ControlToValidate="tb_confirmpass" ErrorMessage="Password confirmation does not match" CssClass="required"></asp:CompareValidator>
                     </td>
                 </tr>
+                        
                 <tr>
-                    <td class="auto-style12">Email:</td>
+                    <td class="auto-style3">Email:</td>
                     <td class="auto-style15">
                         <asp:TextBox ID="tb_email" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style7">
-                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_email" ErrorMessage="Please enter a valid email" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
-                        <br />
+                    <td class="auto-style5">
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="tb_email" ErrorMessage="Please enter a valid email" CssClass="required" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
+                        
                 <tr>
-                    <td class="auto-style12">Phone number:</td>
+                    <td class="auto-style3">Phone number:</td>
                     <td class="auto-style15">
                         <asp:TextBox ID="tb_phone" runat="server"></asp:TextBox>
                     </td>
-                    <td class="auto-style7">
-                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Phone required" ControlToValidate="tb_phone" ></asp:RequiredFieldValidator>
-                        <br />
+                    <td class="auto-style5">
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ErrorMessage="Phone required" CssClass="required" ControlToValidate="tb_phone" ></asp:RequiredFieldValidator>
                     </td>
                 </tr>
+                        
                 <tr>
-                    <td class="auto-style12">
+                    <td class="auto-style3">
                         &nbsp;</td>
                     <td class="auto-style15">
                         &nbsp;</td>
-                    <td class="auto-style7">
+                    <td class="auto-style5">
                         &nbsp;</td>
                 </tr>
                 <tr>
-                    <td class="auto-style12">
+                    <td class="auto-style3">
                         &nbsp;</td>
                     <td class="auto-style15">
-                    <asp:Button ID="btn_registration" runat="server" Text="Button" OnClick="registerEventMethod" Height="31px" />
+                    <asp:Button class="btn-outline-dark" ID="btn_registration" runat="server" Text="Sign Up" OnClick="registerEventMethod" Height="31px" />
 
 
                     </td>
-                    <td class="auto-style7">
+                    <td class="auto-style5">
                         &nbsp;</td>
                 </tr>
                 </table>
-
+</div>
+                        </div>
 
 </div>
 </div>

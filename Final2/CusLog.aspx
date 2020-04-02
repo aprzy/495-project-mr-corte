@@ -115,7 +115,7 @@
                             <br />
                             <br />
                             <br />
-                            <asp:Button ID="Button1" runat="server" OnClick="submitEventMethod" Text="Button" />
+                            <asp:Button class="btn-outline-dark" ID="Button1" runat="server" OnClick="submitEventMethod" Text="Log In" />
                             <br />
 
 <%--            <asp:Button ID="btn_login" runat="server" Text="Log in" OnClick="submitEventMethod"/>--%>

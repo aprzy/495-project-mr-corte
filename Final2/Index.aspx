@@ -377,11 +377,6 @@
                                 <p><a href="http://www.m.me/Mr.corte"><font color="white">Facebook Messenger</font></a></p>
                             </div>
                         </div>
-                        <div class="single_find">
-                            <div class="book_btn">
-                                <a class="popup-with-form" href="#test-form">Make an Appointment</a>
-                            </div>
-                        </div>
 
                     </div>
                 </div>

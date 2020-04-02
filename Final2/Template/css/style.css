@@ -1,6 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900|Roboto:100,100i,300,400,400i,500,500i,700,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900|Roboto:100,100i,300,400,400i,500,500i,700,900&display=swap");
+
+
+.required {
+    color: Red;
+}
+
+
 /* line 1, ../../Arafath/CL/CL september/205. Barber/HTML/scss/_extend.scss */
+
+
+
+
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
